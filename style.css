@@ -1,0 +1,9 @@
+#submit {
+    width: 100px;
+    height: 40px;
+    margin: 0 30px;
+}
+
+td, th {
+    padding: 2px 10px;
+}

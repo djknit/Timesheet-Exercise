@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Timesheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Link to moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" jumbotron">
+            <h1>Employee Timesheet</h1>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Employee info:
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <label for="employee-name"></label>Employee</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3"></span>
+                        </div>
+                        <input type="text" class="form-control" id="employee-name" placeholder="Jane Smith"
+                            aria-describedby="basic-addon3">
+                    </div>
+                    <label for="employee-role">Role</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3"></span>
+                        </div>
+                        <input type="text" class="form-control" id="employee-role" placeholder="Team member"
+                            aria-describedby="basic-addon3">
+                    </div>
+                    <label for="employee-start-date">Start Date (MM/DD/YYYY)</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3"></span>
+                        </div>
+                        <input type="text" class="form-control" id="employee-start-date" placeholder="01/01/1999"
+                            aria-describedby="basic-addon3">
+                    </div>
+                    <label for="employee-monthly-rate">Monthly Rate</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3"></span>
+                        </div>
+                        <input type="text" class="form-control" id="employee-monthly-rate" placeholder="2000"
+                            aria-describedby="basic-addon3">
+                    </div>
+            </div>
+
+
+            </blockquote>
+            <button type="button" class="btn btn-primary btn-sm" id="submit">Submit</button>
+            <br>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Current Employees
+            </div>
+            <div class="card-body" id="employees">
+                <table id="employee-data">
+                    <tr>
+                        <th>
+                            Employee Name
+                        </th>
+                        <th>
+                            Role
+                        </th>
+                        <th>
+                            Start Date
+                        </th>
+                        <th>
+                            Monthly Salary
+                        </th>
+                        <th>
+                            Months Worked
+                        </th>
+                        <th>
+                            Total Earned
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--Linking javascript-->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
